@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>JavaScript Practice 1- Slideshow</title>
+
+<style type="text/css">
+
+.flashclass {
+    height: 200px; /* keep this if you want a fixed height */
+    width: 200px;  /* keep this for a fixed width */
+    border: 5px solid orange;
+    padding: 5px;
+    overflow: hidden; /* ensures oversized images don’t break the box */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centers images inside the container */
+}
+
+.flashclass img {
+    max-width: 100%;   /* ensures image scales down to fit container width */
+    max-height: 100%;  /* ensures image scales down to fit container height */
+    object-fit: cover; /* crops images proportionally to fill container */
+    border-width: 0;
+	text-align: center;    
+}
+</style>
+
+<script type="text/javascript" src="transitionshow.js">
+
+/***********************************************
+* Random Transitions Slideshow- by JavaScript Kit (www.javascriptkit.com)
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+***********************************************/
+
+</script>
+
+</head>
+
+<body >
+
+<script type="text/javascript">
+
+var flashyshow=new flashyslideshow({ //create instance of slideshow
+	wrapperid: "myslideshow", //unique ID for this slideshow
+	wrapperclass: "flashclass", //desired CSS class for this slideshow
+	imagearray: [
+		["Images/Slideshow/CoupleEveningSm.jpg","", "_blank", "Ah, the cool breeze of autumn."],
+		["Images/Slideshow/PigSm.jpg", "", "", "Let's ride a pig"],
+		["Images/Slideshow/StorkSm.jpg", "", "", "Storks like water"],
+		["Images/Slideshow/SaladSm.jpg", "", "", "A yummy salad"],
+	],
+	pause: 2000, //pause between content change (millisec)
+	transduration: 1000 //duration of transition (affects only IE users)
+})
+
+</script>
+		
+	
+	</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>If ElseIf Style Example</title>
+</head>
+<body>
+  <h1 id="myHeading">Change My Style!</h1>
+
+  <script>
+    function setStyle(code) {
+      // Get the h1 element by its ID
+      var myHeading = document.getElementById("myHeading");
+
+      // If... else if... else structure for setting styles
+      if (code === "blue") {
+        myHeading.style.color = "blue";
+        myHeading.style.textDecoration = "none";
+        myHeading.style.textAlign = "right";
+        myHeading.style.fontSize = "30px";
+      } 
+      else if (code === "red") {
+        myHeading.style.color = "red";
+        myHeading.style.textDecoration = "none";
+        myHeading.style.textAlign = "center";
+        myHeading.style.fontSize = "44px";
+      } 
+      else if (code === "yellow") {
+        myHeading.style.color = "yellow";
+        myHeading.style.textDecoration = "underline";
+        myHeading.style.textAlign = "center";
+        myHeading.style.fontSize = "24px";
+      } 
+      else {
+        myHeading.style.color = "something else";
+        myHeading.style.textDecoration = "none";
+        myHeading.style.textAlign = "left";
+        myHeading.style.fontSize = "44px";
+      }
+    }
+
+    // Example test (you can change 'blue' to 'red', 'yellow', or anything else)
+    var userCode = prompt("Enter a color code (blue, red, yellow, or something else):");
+    setStyle(userCode);
+  </script>
+</body>
+</html>
