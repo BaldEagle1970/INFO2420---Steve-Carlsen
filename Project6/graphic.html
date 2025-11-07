@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Backyard Birds - Graphics</title>
+
+<style type="text/css">
+
+
+	#thumbs, #image {
+		width: 700px;
+		border: solid 1px #000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;
+		padding: 5px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:500px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	PrintButton1 = new Image
+	PrintButton2 = new Image
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	PrintButton1.src = "images/print5.gif"
+	PrintButton2.src = "images/print6.gif"
+	logo1.src = "images/logo1.jpg"
+	logo2.src = "images/logo2.jpg"
+}
+
+
+		var imgArray = new Array(
+    'Image1Lg.png',
+    'Image2Lg.png',
+    'Image3Lg.png',
+    'Image4Lg.png'
+  );
+
+
+		var titleArray = new Array(
+    'American Bald Eagle',
+    'St. Louis Cardinal',
+    'Green Heron',
+    'Hummingbird in Flight'
+  );
+			
+		var imgPath = "Images/Fullsize/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body onload="preloadImages()">
+  <div style="text-align: center;">
+    <a href="" 
+       onmouseover="document.getElementById('print').src='Images/print2.png';"
+       onmouseout="document.getElementById('print').src='Images/print1.png';">
+      <img src="Images/print1.png" alt="Print Button" width="250" height="50" id="print" style="border: none;"></a>
+  </div>
+
+
+<div id="logo">
+  <a href="javascript:void(0)" 
+     onmouseover="document.getElementById('logoImg').src='Images/logo2.png';"
+     onmouseout="document.getElementById('logoImg').src='Images/logo1.png';">
+    
+    <img src="Images/logo1.png" id="logoImg" width="250" height="126" alt="logo" style="border:none;"></a>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="thumbs">
+		<img src="Images/Thumbnails/Image1Sm.png" alt="Bald Eagle Staring" onmouseover="swapImage(0);" />
+		<img src="Images/Thumbnails/Image2Sm.png" alt="Cardinal Perched On A Tree" onmouseover="swapImage(1);" />
+		<img src="Images/Thumbnails/Image3Sm.png" alt="Green Heron Drinking" onmouseover="swapImage(2);" />
+		<img src="Images/Thumbnails/Image4Sm.png" alt="Hummingbird In A Holding Pattern" onmouseover="swapImage(3);" />
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="Images/FullSize/Image1Lg.png" alt="Eagle Staring" />
+		<h3 id="bottomText">Eagle Staring</h3>
+	</div>
+
+<img src="Images/2colback.png">
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+</div>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+</p>
+  
+
+</body>
+</html>
