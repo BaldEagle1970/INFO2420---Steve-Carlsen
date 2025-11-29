@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Backyard Birds - Home</title>
+    <link href="mycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="myscripts.js"></script>
+</head>
+<body onload="preloadImages()">
+
+    <!-- Logo + Navigation Image (Image Map) -->
+    <section class="nav-image">
+        <img src="images/logo1.png" width="1224" height="1584" alt="Backyard Birds Logo">
+        <img src="images/mypage.gif"
+             width="1224" height="1584"
+             usemap="#birdnav"
+             alt="Backyard Birds Navigation">
+    </section>
+
+    <!-- Image Map for Navigation -->
+    <map name="birdnav">
+        <!-- Home (top-left: eagle + “Home” text) -->
+        <area shape="rect"
+              coords="0,0,614,580"
+              href="home.html"
+              alt="Home">
+
+        <!-- About Us (top-right: quail + “About Us” text) -->
+        <area shape="rect"
+              coords="615,0,1223,580"
+              href="aboutus.html"
+              alt="About Us">
+
+        <!-- Tributes (middle-left: pigeon + “Tributes” text) -->
+        <area shape="rect"
+              coords="0,609,614,1160"
+              href="tributes.html"
+              alt="Tributes">
+
+        <!-- FAQ (middle-right: heron + “FAQ” text) -->
+        <area shape="rect"
+              coords="615,609,1223,1160"
+              href="faq.html"
+              alt="FAQ">
+    </map>
+
+    <!-- Optional intro content box for readability -->
+    <div class="content">
+        <h1>Welcome to Utah Backyard Birds</h1>
+        <p></p>
