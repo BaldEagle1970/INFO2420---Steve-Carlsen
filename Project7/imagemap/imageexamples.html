@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+
+<title>Image Map Example</title>
+<style type="text/css">
+body {
+	background-color: #FFFFCC;
+	font-size: large;
+	color: #000080;
+}
+br {
+	clear: all;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Image Experimentation</h2>
+
+<p>
+Expression Web allows the web designer to easily add formatting changes to an image.
+Just be careful that you don't accidently overwrite your original image.&nbsp; 
+Some of the simple formatting available using the Pictures toolbar are rotating, 
+flipping, changing brightness or contrast, adding a transparent color, or 
+washing out a color.&nbsp; </p>
+
+
+
+<br>
+<h2>Image Map Example</h2>
+
+<p><img src="Images/map.gif" width="275" height="289" alt="map" usemap="#map1"></p>
+	<map name="map1">
+	<area shape="rect" coords="150,40,220,110" href="rectangle.html" alt="Green Square">
+
+	<area shape="circle" coords="92,112,20" href="circle.html" alt="Red Circle">
+
+    <area shape="poly" coords="127,203,
+                164,183,
+                174,162,
+                199,195,
+                218,206,
+                185,230,
+                173,246,
+                150,216" href="polygon.html" alt="Blue Star">
+</map>
+
+
+
+
+</body>
+</html>
