@@ -1,0 +1,124 @@
+/* Backyard Birds - Print Stylesheet */
+/* Print-friendly styles for printed pages */
+
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        border-bottom: 2px solid black;
+        padding: 10px 0;
+    }
+
+    nav,
+    .topnav,
+    .print-button,
+    footer {
+        display: none !important;
+    }
+
+    main,
+    .content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav-image {
+        page-break-after: avoid;
+    }
+
+    h1 {
+        font-size: 24pt;
+        page-break-after: avoid;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 18pt;
+        page-break-after: avoid;
+        margin-top: 15pt;
+        border-bottom: 1px solid black;
+    }
+
+    h3 {
+        font-size: 14pt;
+        page-break-after: avoid;
+    }
+
+    p {
+        text-align: left;
+        orphans: 3;
+        widows: 3;
+    }
+
+    img {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+
+    table {
+        border-collapse: collapse;
+        page-break-inside: avoid;
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        border: 1px solid black;
+        padding: 8pt;
+    }
+
+    table th {
+        background-color: #cccccc !important;
+        font-weight: bold;
+    }
+
+    table caption {
+        font-weight: bold;
+        margin-bottom: 8pt;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid black;
+        margin: 15pt 0;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black !important;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript"]:after {
+        content: "";
+    }
+
+    ul,
+    ol {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        margin: 1in;
+    }
+}

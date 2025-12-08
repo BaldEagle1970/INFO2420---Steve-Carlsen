@@ -1,0 +1,282 @@
+/* Backyard Birds - Main Stylesheet */
+/* Earth tone color scheme: pinks, tans, grays, teals, greens */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #F9E6D5;
+    color: #4B6060;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #AAC7AA;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #648064;
+}
+
+header h1 {
+    color: #4B6060;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #809696;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #F9E6D5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4B6060;
+    color: #AAC7AA;
+}
+
+.topnav {
+    background-color: #809696;
+}
+
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav ul li {
+    margin: 0;
+}
+
+.topnav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #F9E6D5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.topnav ul li a:hover {
+    background-color: #4B6060;
+    color: #AAC7AA;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(75, 96, 96, 0.2);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.nav-image {
+    text-align: center;
+    padding: 20px;
+    background-color: #D3C6C6;
+}
+
+.nav-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-image h1 {
+    color: #4B6060;
+    margin-top: 15px;
+}
+
+h1 {
+    color: #648064;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #4B6060;
+    font-size: 1.8em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #AAC7AA;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #809696;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+a {
+    color: #648064;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #AAC7AA;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #AFA093;
+    margin: 25px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #F9D5D5;
+}
+
+table caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #4B6060;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #AAC7AA;
+}
+
+table th {
+    background-color: #809696;
+    color: #F9E6D5;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #4B6060;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #AFA093;
+}
+
+table tr:nth-child(even) {
+    background-color: #F9E6D5;
+}
+
+table tr:hover {
+    background-color: #D3C6C6;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #4B6060;
+    color: #F9E6D5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.print-button {
+    background-color: #648064;
+    color: #F9E6D5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.print-button:hover {
+    background-color: #AAC7AA;
+    color: #4B6060;
+}
+
+.splash-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #AAC7AA 0%, #809696 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-container h1 {
+    color: #F9E6D5;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(75, 96, 96, 0.5);
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 2em;
+    color: #4B6060;
+}
+
+.coming-soon h2 {
+    font-size: 2.5em;
+    color: #648064;
+    border: none;
+}
